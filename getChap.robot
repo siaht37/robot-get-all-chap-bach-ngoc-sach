@@ -14,15 +14,15 @@ ${PREFIX_URL}    https://bachngocsach.com.vn
 ${FILE_PATH_PREFIX}    quang-am-chi-ngoai/quang-am-chi-ngoai-
 
 *** Test Cases ***
-BachNgocSach Get 1 chap
-    ${url}=    Set Variable    https://bachngocsach.com.vn/reader/quan-am-chi-ngoai-convert/awmp       
-    ${file_path}=    Set Variable    quang-am-chi-ngoai/quang-am-chi-ngoai-chap-1.txt
-    Open Browser    ${url}    firefox
-    Wait Until Element Is Visible    noi-dung
-    ${content}=    Get Text    noi-dung
-    Create File    ${file_path}    ${content}
-    ${result}    Remove Trailing Numbers    ${file_path}
-    Log    ${result}
+# BachNgocSach Get 1 chap
+#     ${url}=    Set Variable    https://bachngocsach.com.vn/reader/quan-am-chi-ngoai-convert/awmp       
+#     ${file_path}=    Set Variable    quang-am-chi-ngoai/quang-am-chi-ngoai-chap-1.txt
+#     Open Browser    ${url}    firefox
+#     Wait Until Element Is Visible    noi-dung
+#     ${content}=    Get Text    noi-dung
+#     Create File    ${file_path}    ${content}
+#     ${result}    Remove Trailing Numbers    ${file_path}
+#     Log    ${result}
 
 Get Chapter URL List
     Open Browser    ${URL_PAGE_OF_CONTENTS}    firefox
