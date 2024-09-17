@@ -1,0 +1,4 @@
+robotframework==7.0.1
+robotframework-seleniumlibrary==6.5.0
+webdrivermanager==0.10.0
+robotframework-jsonlibrary==0.5
